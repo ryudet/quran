@@ -1,0 +1,104 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text */
+}
+
+/* Header */
+.header {
+    background-color: #1c1c1c; /* Dark background for header */
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #50fa7b; /* Soft green for header text */
+}
+
+/* Main Content */
+.all-surahs-page {
+    padding: 60px 20px;
+    background-color: #1c1c1c; /* Darker background for content */
+}
+
+.all-surahs-page h2 {
+    font-size: 2rem;
+    color: #50fa7b; /* Soft green for section heading */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.surahs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.surahs-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.surahs-list li {
+    background-color: #333; /* Dark card background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    transition: background 0.3s ease;
+}
+
+.surahs-list li:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+.surahs-list a {
+    color: #50fa7b; /* Soft green for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.surahs-list a:hover {
+    color: #3ecf63; /* Darker green on hover */
+}
+
+/* Footer */
+.footer-section {
+    background-color: #1c1c1c; /* Dark background for footer */
+    padding: 20px;
+    text-align: center;
+    color: #b8b8b8; /* Light gray text */
+    border-top: 1px solid #333; /* Subtle border */
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .all-surahs-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .surahs-list li {
+        padding: 10px;
+    }
+
+    .surahs-list a {
+        font-size: 1rem;
+    }
+}
