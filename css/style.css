@@ -419,12 +419,12 @@ body.dark-mode .settings-sidebar {
     font-size: 20px;
 }
 p {
-    line-height: 2;
+    line-height: 1.8;
   }
   }
 
   p {
-    line-height: 2.6;
+    line-height: 2;
   }
   a {
     color: #000000;

@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/surat.css">
-    <link rel="stylesheet" href="/css/all.min.css">
-    <link rel="stylesheet" href="/css/normlize.css">
+    <link rel="stylesheet" href="../css/surat.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/normlize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p1fFQZxA6oYdzL5j1iJ1xNlgAh7EvoRjrMD8fnMVVnSevFfJScuRivR+94J0A6R6jN6XEV5yV9Xo+L0p3q5o4g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
 </head>
@@ -14,13 +21,12 @@
     <div class="bar">
         <div class="container">
             <div class="logo">
-                <a href="/index.html">القرآن</a>
-                
+                <a href="../index.html">القرآن</a>
             </div>
             <ul>
+                <li><a href="../qasas/qasas.html"><i class="fa-solid fa-book"></i> قصص</a></li>
+                <li><a href="../alazkar/azkar.html"> <i class="fa-solid fa-star-and-crescent"></i>الاذكار</a></li>
                 
-                <li><a href=""><i class="fa-solid fa-book"></i> التفسير</a></li>
-                <li><a href=""> <i class="fa-solid fa-star-and-crescent"></i>الاذكار</a></li>
                 <!-- Icon to open settings -->
                 <div id="settings-icon"><i class="fa-solid fa-gear"></i></div>
 
@@ -33,7 +39,7 @@
                     الوضع الليلي
                     </label>
                     <label class="fontsize">
-                   حجم الخط
+                         حجم الخط
                     <select id="font-size-select">
                         <option value="small">صغير</option>
                         <option value="medium" selected>متوسط</option>
@@ -495,8 +501,8 @@
     </div>
     <div class="next-sura">
         <!-- Navigation buttons -->
-        <button id="previousSurah" class="nav-button"> <i class="fa-solid fa-arrow-right"></i> <a href="/surat/al-nisaa.html">السورة التالية </a>  </button>
-        <button id="nextSurah" class="nav-button">  <a href="/surat/albaqarah.html">السورة الماضية </a> <i class="fa-solid fa-arrow-left"></i> </button>
+        <button id="previousSurah" class="nav-button"> <i class="fa-solid fa-arrow-right"></i> <a href="../surat/al-nisaa.html">السورة التالية </a>  </button>
+        <button id="nextSurah" class="nav-button">  <a href="../surat/albaqarah.html">السورة الماضية </a> <i class="fa-solid fa-arrow-left"></i> </button>
         
 
     </div>
@@ -504,6 +510,6 @@
     
 </div>
 </div>
-<script src="/index.js"></script>
+<script src="../index.js"></script>
 </body>
 </html>
