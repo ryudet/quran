@@ -569,6 +569,6 @@ hr {
         top: 6px;
         right: 53px;
         font-size: 28px;
-        display: none;
+        display: none !important;
     }
   }
