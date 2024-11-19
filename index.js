@@ -353,4 +353,11 @@ window.onload = replaceTashkeelWithX;
       }
   });
 
-  
+  // استهداف جميع الروابط التي تحتوي على النص "السورة الماضية"
+document.querySelectorAll('a').forEach(link => {
+  // التحقق إذا كان النص يحتوي على "السورة الماضية"
+  if (link.textContent.includes('السورة الماضية')) {
+      // استهداف النص فقط وتغييره دون التأثير على الأيقونة
+      link.innerHTML = link.innerHTML.replace('السورة الماضية', 'السورة السابقة');
+  }
+});

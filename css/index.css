@@ -592,6 +592,7 @@ button, input {
     .box h3 {
         position: relative;
         font-size: 1.2rem;
+        padding: 0px 21px;
 
     }
 }
@@ -608,6 +609,7 @@ button, input {
   .surat .box.show {
     opacity: 1;
     transform: scale(1); /* Full size */
+    padding: 20px 29px 20px 0px;
   }
   
   /* State when leaving viewport (scrolling up) - only fades opacity */
