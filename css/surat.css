@@ -564,3 +564,11 @@ hr {
         font-size: 14px;
     }
 }
+@media (max-width:768px){
+    #settings-icon {
+        top: 6px;
+        right: 53px;
+        font-size: 28px;
+        display: none;
+    }
+  }
