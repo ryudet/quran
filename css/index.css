@@ -1,0 +1,652 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --MainColor:#08abf765;
+    --sec-color:#00bdbd;
+    --black:black;
+    --white:white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Amiri" ,sans-serif;
+    background-color:var(--white);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: rto;
+    margin-right: auto;
+}
+
+/* start bar section  */
+
+.bar {
+    margin: 30px;
+    position: relative;
+}
+.bar::before{
+    content: "";
+    border-bottom: 1px solid ;
+    border-color: rgb(112, 112, 112);
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -20px;
+}
+.bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.bar .container a{
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 40px 20px 40px 40px;
+}
+
+.bar .container .bars {
+    font-size: 1.8rem;
+    padding: 0 20px;
+}
+.bar .container ul {
+    display: flex;
+}
+.bar .container ul li a{
+    padding: 0 20px;
+    font-size: 1.7rem;
+}
+.bar .container ul li:hover a{
+    color: #00bdbd;
+}
+.bar .container ul li i {
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+@media (max-width : 767px) {
+    .bar{
+        padding: 0;
+    }
+    .bar .container .logo a {
+        font-size: 2.6rem;
+        justify-content: center;
+        display: flex;
+        padding: 0 0 16px;
+        text-align: center;
+        align-items: center;
+    }
+    .bar .container {
+        text-align: center;
+        justify-content: center;
+    }
+    .bar .container ul li a{
+        font-size: 1.6rem;
+        padding: inherit;
+        margin: 5px 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .bar .container ul li:hover a{
+        color: #00bdbd;
+    }
+    .bar .container .bars {
+        font-size: 1.4rem;
+        padding: 0 0;
+    }
+    .bar .container ul {
+        padding: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+/* start search section  */
+
+.search-back{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    background-image: url(/images/2147868960.jpg);
+    background-size: cover;
+}
+.search-back::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--MainColor);
+    backdrop-filter: blur(20px);
+}
+.search {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width: 600px;
+}
+
+.search .box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 13px 40px;
+    z-index: 100;
+    position: absolute;
+    width: 750px;
+    height: 65px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width:768px){
+    button, input {
+        overflow: visible;
+        width: 100%;
+    }
+    
+}
+#searchInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    direction: rtl;
+    padding: 10px 10px;
+}
+@media (max-width : 768px){
+    .search {
+        width: 90%;
+    }
+    .search .box {
+        padding: 10px 30px;
+    }
+    .search-back {
+        height: 40vh;
+    }
+    .bar .container ul li i {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+}
+.search-icon {
+    color: gray !important;
+    margin-left: 8px;
+}
+
+#results {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    max-height: 170px;
+    overflow-y: auto;
+    display: none;
+    z-index: 10;
+    color: black;
+    border-radius: 10px;
+}
+::placeholder {
+    font-size: 20px;
+}
+#results::-webkit-scrollbar {
+    display: none;
+}
+#results div {
+    padding: 19px 33px;
+    cursor: pointer;
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.479);
+}
+
+#results div:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+/* start surah  */
+
+
+
+
+
+.surat {
+    position: relative;
+    width: 100%;
+}
+.surat .container a {
+    position: relative;
+}
+.surat .container a:hover {
+    color: var(--sec-color);
+}
+.surat .container a:hover .box {
+    border-color: var(--se);
+}
+.surat .container  {
+    margin: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px ,1fr));
+    gap: 10px;
+    position: relative;
+}
+.surat .container .box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 10px;
+    position: relative;
+    
+}
+.surat .container .box .name-en {
+    padding: 0 30px;
+
+}
+
+.surat .container .box .number {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+@media (max-width:767px){
+    .search .box {
+        width: 100%;
+    }
+    .surat {
+        padding: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .surat .container {
+        padding: 5px 22px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .surat .container  {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px ,1fr));
+        gap: 10px;
+    }
+    .surat .container .box {
+        padding: 17px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+/* Style for the settings icon */
+#settings-icon {
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 40;
+  }
+  @media (max-width:768px){
+    #settings-icon {
+    position: relative;
+    font-size: 27px;
+    display: block;
+    margin: -12px 18px 0px 0;
+    cursor: pointer;
+    z-index: 40;
+    }
+  }
+  /* Sidebar settings panel */
+  .settings-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Start hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 50;
+  }
+  
+  /* Show sidebar */
+  .settings-sidebar.open {
+    right: 0;
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  body.dark-mode .settings-sidebar {
+    background-color: #333;
+    color: #ddd;
+  }
+  #close-settings {
+    position: absolute;
+    top: 10px;
+    right: -103px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #818181;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-right: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+  }
+  #font-size-select {
+    color: black;
+  }
+  /* Light mode (default) */
+body {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Dark mode */
+  body.dark-mode {
+    background-color: #000;
+    color: #fff; /* Universal white font color */
+  }
+  
+  /* Ensure any specific elements keep a white color in dark mode */
+  body.dark-mode * {
+    color: inherit; /* Inherit white color from body for all elements */
+  }
+  
+  body.dark-mode .settings-sidebar {
+    background-color: #000000;
+  }
+  .dark {
+    display: block;
+    font-size: 1.7rem;
+    padding: 12px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  .darkmode {
+    font-size: 20px;
+  }
+  .dark i{
+    font-size: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  [type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    outline: none;
+    font-size: 30px;
+    width: 26px;
+    height: 18px;
+    appearance: none;
+}
+.fontsize {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0 20px;
+    margin-bottom:10px ;
+    left: 50%;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+
+label p {
+    padding-bottom: 10px;
+}
+h2{
+    text-align: center;
+}
+select {
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: black !important;
+}
+input {
+    color: black !important;
+}
+
+    .box h3 {
+        position: relative;
+        font-size: 1.4rem;
+
+    }
+    .box h3::before {
+        content: "";
+        background-color: #047c725d;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% ,-50%) rotate(50deg);
+        z-index: -1;
+    }
+    .box:hover h3 {
+        color: #006d6d;
+    }
+    .box:hover h3::before {
+        background-color: #00e1ff2c;
+    }
+    
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    backdrop-filter: blur(8px); /* Blur effect */
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    scrollbar-width: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 50vh; /* Set a maximum height for the modal */
+    overflow-y: auto; /* Enable scrolling for the entire modal if needed */
+}
+
+/* Fixed search bar inside the modal */
+.modal-content input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 10;
+    scrollbar-width: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 38px;
+    cursor: pointer;
+    color: white;
+}
+#modalResults {
+    margin-top: 10px;
+    max-height: 300px; /* Maximum height for results section */
+    overflow-y: auto; /* Enable vertical scrolling for results */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    scrollbar-width: none;
+}
+#modalResults div {
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+    border-top: 1px solid rgba(128, 128, 128, 0.219);
+}
+#modalResults div:hover {
+    background-color: #eee;
+}
+button, input {
+    overflow: visible;
+    border: none;
+    outline: none;
+}
+
+@media (max-width:768px){
+    
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 50vh; /* Set a maximum height for the modal */
+    overflow-y: auto; /* Enable scrolling for the entire modal if needed */
+
+}
+}
+
+@media (max-width:768px){
+    #close-settings {
+        position: absolute;
+        top: 4px;
+        right: -74px;
+        background: none;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #818181;
+        font-size: 24px;
+        font-family: sans-serif;
+        margin-right: 10px;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.4rem;
+    }
+    .box h3::before {
+        width: 35px;
+        height: 35px;
+    }
+    .box h3 {
+        position: relative;
+        font-size: 1.2rem;
+
+    }
+}
+
+/* Initial state before animation */
+/* Initial state with opacity 0 and scale 0.5 */
+.surat .box {
+    opacity: 0;
+    transform: scale(0.5); /* Start smaller */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Animate both on scroll down */
+  }
+  
+  /* Animation state when visible (scrolling down) */
+  .surat .box.show {
+    opacity: 1;
+    transform: scale(1); /* Full size */
+  }
+  
+  /* State when leaving viewport (scrolling up) - only fades opacity */
+  .surat .box.hidden {
+    opacity: 0;
+    transition: opacity 0.6s ease; /* Only opacity changes */
+  }
+  
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.945);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(8,73,99,1) 0%, rgba(0,134,161,0.6923144257703081) 100%);
+}
+button, input {
+    width: 100%;
+}
+/* Adjustments for Medium Screens (Tablets and Small Laptops) */
+@media (max-width: 1024px) {
+    .bar {
+      padding: 10px 15px;
+    }
+  
+    .bar .container .logo a {
+      font-size: 2.4rem;
+    }
+  
+    .bar .container ul {
+      justify-content: space-between;
+    }
+  
+    .bar .container ul li {
+      margin: 0 10px;
+    }
+  
+    .bar .container ul li a {
+      font-size: 1.5rem;
+    }
+  }

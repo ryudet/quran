@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/surat.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/normlize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-p1fFQZxA6oYdzL5j1iJ1xNlgAh7EvoRjrMD8fnMVVnSevFfJScuRivR+94J0A6R6jN6XEV5yV9Xo+L0p3q5o4g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bar">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">القرآن</a>
+            </div>
+            <ul>
+                <li><a href=""><i class="fa-solid fa-book"></i> التفسير</a></li>
+                <li><a href=""> <i class="fa-solid fa-star-and-crescent"></i>الاذكار</a></li>
+                
+                <!-- Icon to open settings -->
+                <div id="settings-icon"><i class="fa-solid fa-gear"></i></div>
+
+                <!-- Settings sidebar -->
+                <div class="settings-sidebar" id="settings-sidebar">
+                    <button id="close-settings">X</button> <!-- Close button -->
+                    <h2>الاعدادات</h2>
+                    <label class="dark">
+                    <input class="darkmode" type="checkbox" id="dark-mode-toggle" /><i class="fa-solid fa-circle-half-stroke"></i>
+                    الوضع الليلي
+                    </label>
+                    <label class="fontsize">
+                         حجم الخط
+                    <select id="font-size-select">
+                        <option value="small">صغير</option>
+                        <option value="medium" selected>متوسط</option>
+                        <option value="large">كبير</option>
+                    </select>
+                    </label>
+                </div>
+            </ul>
+    
+</div>
+</div>
+<div class="play-position">
+    <div class="surats">
+        <div class="container">
+            
+    <h1>سورة القارعة</h1>
+    <h2 id="play-text">بِسۡمِ <b>ٱللَّهِ</b> ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ</h2>
+    <p>
+
+        ٱلۡقَارِعَةُ <label>(1)</label> مَا ٱلۡقَارِعَةُ <label>(2)</label> وَمَآ أَدۡرَىٰكَ مَا ٱلۡقَارِعَةُ <label>(3)</label> يَوۡمَ 
+        يَكُونُ ٱلنَّاسُ كَٱلۡفَرَاشِ ٱلۡمَبۡثُوثِ <label>(4)</label> وَتَكُونُ ٱلۡجِبَالُ 
+        كَٱلۡعِهۡنِ ٱلۡمَنفُوشِ <label>(5)</label> فَأَمَّا مَن ثَقُلَتۡ مَوَٰزِينُهُۥ <label>(6)</label> فَهُوَ فِي 
+        عِيشَةٖ رَّاضِيَةٖ <label>(7)</label> وَأَمَّا مَنۡ خَفَّتۡ مَوَٰزِينُهُۥ <label>(8)</label> فَأُمُّهُۥ هَاوِيَةٞ 
+        <label>(9)</label> وَمَآ أَدۡرَىٰكَ مَا هِيَهۡ <label>(10)</label> نَارٌ حَامِيَةُۢ <label>(11)</label> 
+        <br> <span class="line">(600)</span>
+        
+    </p>
+    
+    </div>
+
+
+    <div class="next-sura">
+        <button id="previousSurah" class="nav-button">
+            <a href="/surat/al-adiyat.html">
+                <i class="fa-solid fa-arrow-right"></i> السورة الماضية
+            </a>
+        </button>
+        <button id="nextSurah" class="nav-button">
+            <a href="/surat/al-takathur.html">
+                السورة التالية <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </button>
+    </div>
+    
+    
+
+<script src="/index.js"></script>
+</body>
+</html>

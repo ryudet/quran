@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/normlize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Noto+Naskh+Arabic:wght@400..700&display=swap" rel="stylesheet">
+<title>Quran | Website</title>
+</head>
+<body>
+
+    <div class="bar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">القرآن<div id="settings-icon"><i class="fa-solid fa-gear"></i></div></a>
+                
+            </div>
+            <ul>
+                
+                <li><a href="/qasas/qasas.html"><i class="fa-solid fa-book"></i> قصص </a></li>
+                <li><a href="/azkar.html"> <i class="fa-solid fa-star-and-crescent"></i>الاذكار</a></li>
+                <!-- Icon to open settings -->
+                    
+
+                    <!-- Settings sidebar -->
+                    <div class="settings-sidebar" id="settings-sidebar">
+                        <button id="close-settings">X</button> <!-- Close button -->
+                        <h2>الاعدادات</h2>
+                        <label class="dark">
+                        <input class="darkmode" type="checkbox" id="dark-mode-toggle" /><i class="fa-solid fa-circle-half-stroke"></i>
+                        الوضع الليلي
+                        </label>
+                        <label class="fontsize">
+                        <select id="font-size-select">
+                            <option value="small">صغير</option>
+                            <option value="medium" selected>متوسط</option>
+                            <option value="large">كبير</option>
+                        </select>
+                        حجم الخط
+                        </label>
+                    </div>
+
+            </ul>
+    
+</div>
+</div>
+
+    <!-- search section  -->
+    <!-- Main Search Input -->
+<!-- Main Search Input -->
+<div class="search-back">
+    <div class="search">
+        <div class="box">
+            <!-- Disable autocomplete to prevent search history suggestions -->
+            <input type="text" id="mainSearchInput" placeholder="البحث..." onclick="openSearchModal()" autocomplete="off" />
+        </div>
+        <div id="results"></div>
+    </div>
+</div>
+
+<!-- Full-Screen Search Modal -->
+<div id="searchModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeSearchModal()">&times;</span>
+        <!-- Disable autocomplete here as well -->
+        <input type="text" id="modalSearchInput" placeholder="البحث..." oninput="filterSurahs()" autocomplete="off" />
+        <div id="modalResults"></div>
+    </div>
+</div>
+
+
+    <!-- surah section -->
+    
+        <div class="surat">
+            <div class="container">
+                <a href="/surat/fatihah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>1</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-fatihah</h2>
+                        <p>The Opener</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفاتحة</h2>
+                        <p>7 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/albaqarah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>2</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-baqarah</h2>
+                        <p>The Cow</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>البقرة</h2>
+                        <p>286 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/ali-Imran.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>3</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ali-Imran</h2>
+                        <p>Family of Imran</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>ال عمران</h2>
+                        <p>200 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-nisaa.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>4</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-nissa</h2>
+                        <p>The women</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النساء</h2>
+                        <p>176 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-maidah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>5</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ma'idah</h2>
+                        <p>The table Spread</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المائدة</h2>
+                        <p>120 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-anaam.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>6</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-An'am</h2>
+                        <p>The Cattle</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الانعام</h2>
+                        <p>165 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-Aaraaf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>7</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Araaf</h2>
+                        <p>The Heights</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الاعراف</h2>
+                        <p>206 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-anfal.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>8</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Anfal</h2>
+                        <p>The table Spread</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الانفال</h2>
+                        <p>75 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-tawbah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>9</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-tawbah</h2>
+                        <p>The Repentance</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التوبة</h2>
+                        <p>129 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/yunus.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>10</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Yunus</h2>
+                        <p>Jonah</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>يونس</h2>
+                        <p>109 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/hud.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>11</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Hud</h2>
+                        <p>Hud (Prophet's Name)</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>هود</h2>
+                        <p>123 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/yusuf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>12</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Yusuf</h2>
+                        <p>Joseph</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>يوسف</h2>
+                        <p>111 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-raad.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>13</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ar-Ra'd	</h2>
+                        <p>The Thunder</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الرعد</h2>
+                        <p>43 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/ibrahim.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>14</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ibrahim</h2>
+                        <p>Abraham</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>إبراهيم	</h2>
+                        <p>52 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-hijr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>15</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Hijr	</h2>
+                        <p>The Rocky Tract	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحجر	</h2>
+                        <p>99 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-nahl.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>16</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-nahl</h2>
+                        <p>The Bee	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النحل	</h2>
+                        <p>128 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-isra.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>17</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Isra	</h2>
+                        <p>The Night Journey	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الإسراء	</h2>
+                        <p>111 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-kahf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>18</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Kahf	</h2>
+                        <p>The Cave	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الكهف	</h2>
+                        <p>110 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/maryam.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>19</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Maryam</h2>
+                        <p>Mary</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>مريم	</h2>
+                        <p>98 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/ta-ha.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>20</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ta-Ha	</h2>
+                        <p>Ta-Ha (Mystic Letters)	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>طه	</h2>
+                        <p>135 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-anbiya.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>21</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Anbiya	</h2>
+                        <p>The Prophets	</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الأنبياء	</h2>
+                        <p>112 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-hajj.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>22</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Hajj</h2>
+                        <p>The Pilgrimage</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحج</h2>
+                        <p>78 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-muminun.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>23</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Muminun</h2>
+                        <p>The Believers</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المؤمنون</h2>
+                        <p>118 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-nur.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>24</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Nur</h2>
+                        <p>The Light</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النور</h2>
+                        <p>64 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-furqan.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>25</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Furqan</h2>
+                        <p>The Criterion</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفرقان</h2>
+                        <p>77 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-shuara.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>26</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ash-Shu'ara</h2>
+                        <p>The Poets</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الشعراء</h2>
+                        <p>227 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-naml.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>27</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-Naml</h2>
+                        <p>The Ant</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النمل</h2>
+                        <p>93 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-qasas.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>28</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qasas</h2>
+                        <p>The Stories</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القصص</h2>
+                        <p>88 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ankabut.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>29</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ankabut</h2>
+                        <p>The Spider</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>العنكبوت</h2>
+                        <p>69 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-rum.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>30</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ar-Rum</h2>
+                        <p>The Romans</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الروم</h2>
+                        <p>60 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/luqman.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>31</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Luqman</h2>
+                        <p>Luqman</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>لقمان</h2>
+                        <p>34 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-sajda.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>32</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>As-Sajda</h2>
+                        <p>The Prostration</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>السجدة</h2>
+                        <p>30 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ahzab.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>33</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ahzab</h2>
+                        <p>The Combined Forces</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الأحزاب</h2>
+                        <p>73 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/saba.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>34</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Saba</h2>
+                        <p>Sheba</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>سبأ</h2>
+                        <p>54 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/fatir.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>35</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Fatir</h2>
+                        <p>The Originator</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>فاطر</h2>
+                        <p>45 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/ya-sin.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>36</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ya-Sin</h2>
+                        <p>Ya-Sin</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>يٰسٓ</h2>
+                        <p>83 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-saffat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>37</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>As-Saffat</h2>
+                        <p>Those who set the Ranks</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الصافات</h2>
+                        <p>182 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/sad.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>38</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Sad</h2>
+                        <p>Sad</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>ص</h2>
+                        <p>88 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-zumar.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>39</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Az-Zumar</h2>
+                        <p>The Troops</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الزمر</h2>
+                        <p>75 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/ghafir.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>40</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ghafir</h2>
+                        <p>The Forgiver</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>غافر</h2>
+                        <p>85 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/fussilat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>41</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Fussilat</h2>
+                        <p>Explained in Detail</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>فصلت</h2>
+                        <p>54 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-shura.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>42</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ash-Shura</h2>
+                        <p>The Consultation</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الشورى</h2>
+                        <p>53 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-zukhruf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>43</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Az-Zukhruf</h2>
+                        <p>The Gold Adornments</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الزخرف</h2>
+                        <p>89 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-dukhan.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>44</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Dukhan</h2>
+                        <p>The Smoke</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الدخان</h2>
+                        <p>59 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-jathiyah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>45</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Jathiyah</h2>
+                        <p>The Crouching</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الجاثية</h2>
+                        <p>37 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ahqaf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>46</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ahqaf</h2>
+                        <p>The Wind-Curved Sandhills</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الأحقاف</h2>
+                        <p>35 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/muhammad.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>47</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Muhammad</h2>
+                        <p>Muhammad</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>محمد</h2>
+                        <p>38 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-fath.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>48</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Fath</h2>
+                        <p>The Victory</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفتح</h2>
+                        <p>29 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-hujurat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>49</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Hujurat</h2>
+                        <p>The Rooms</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحجرات</h2>
+                        <p>18 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/qaf.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>50</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Qaf</h2>
+                        <p>Qaf</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>ق</h2>
+                        <p>45 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-dhariyat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>51</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Dhariyat</h2>
+                        <p>The Winnowing Winds</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الذاريات</h2>
+                        <p>60 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-tur.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>52</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Tur</h2>
+                        <p>The Mount</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الطور</h2>
+                        <p>49 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-najm.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>53</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Najm</h2>
+                        <p>The Star</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النجم</h2>
+                        <p>62 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-qamar.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>54</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qamar</h2>
+                        <p>The Moon</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القمر</h2>
+                        <p>55 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-rahman.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>55</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ar-Rahman</h2>
+                        <p>The Beneficent</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الرحمن</h2>
+                        <p>78 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-waqiah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>56</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Waqi'ah</h2>
+                        <p>The Event</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الواقعة</h2>
+                        <p>96 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-hadid.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>57</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Hadid</h2>
+                        <p>The Iron</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحديد</h2>
+                        <p>29 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-mujadila.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>58</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Mujadila</h2>
+                        <p>The Pleading Woman</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المجادلة</h2>
+                        <p>22 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-hashr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>59</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Hashr</h2>
+                        <p>The Exile</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحشر</h2>
+                        <p>24 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-mumtahina.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>60</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Mumtahina</h2>
+                        <p>The Woman to be Examined</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الممتحنة</h2>
+                        <p>13 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-saff.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>61</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>As-Saff</h2>
+                        <p>The Ranks</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الصف</h2>
+                        <p>14 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-jumuah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>62</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Jumu'ah</h2>
+                        <p>The Congregation, Friday</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الجمعة</h2>
+                        <p>11 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-munafiqun.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>63</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Munafiqun</h2>
+                        <p>The Hypocrites</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المنافقون</h2>
+                        <p>11 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-taghabun.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>64</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Taghabun</h2>
+                        <p>The Mutual Disillusion</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التغابن</h2>
+                        <p>18 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-talaq.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>65</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Talaq</h2>
+                        <p>The Divorce</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الطلاق</h2>
+                        <p>12 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-tahrim.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>66</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Tahrim</h2>
+                        <p>The Prohibition</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التحريم</h2>
+                        <p>12 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-mulk.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>67</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Mulk</h2>
+                        <p>The Sovereignty</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الملك</h2>
+                        <p>30 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-qalam.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>68</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qalam</h2>
+                        <p>The Pen</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القلم</h2>
+                        <p>52 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-haqqah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>69</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Haqqah</h2>
+                        <p>The Reality</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الحاقة</h2>
+                        <p>52 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-maarij.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>70</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ma'arij</h2>
+                        <p>The Ascending Stairways</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المعارج</h2>
+                        <p>44 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/nuh.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>71</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Nuh</h2>
+                        <p>Noah</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>نوح</h2>
+                        <p>28 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-jinn.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>72</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Jinn</h2>
+                        <p>The Jinn</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الجن</h2>
+                        <p>28 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-muzzammil.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>73</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Muzzammil</h2>
+                        <p>The Enshrouded One</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المزمل</h2>
+                        <p>20 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-muddathir.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>74</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Muddathir</h2>
+                        <p>The Cloaked One</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المدثر</h2>
+                        <p>56 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-qiyamah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>75</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qiyamah</h2>
+                        <p>The Resurrection</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القيامة</h2>
+                        <p>40 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-insan.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>76</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Insan</h2>
+                        <p>Man</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الإنسان</h2>
+                        <p>31 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-mursalat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>77</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Mursalat</h2>
+                        <p>The Emissaries</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المرسلات</h2>
+                        <p>50 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-naba.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>78</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-Naba</h2>
+                        <p>The Tidings</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النبأ</h2>
+                        <p>40 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-naziat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>79</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-Nazi'at</h2>
+                        <p>The Extractors</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النازعات</h2>
+                        <p>46 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/abasa.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>80</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Abasa</h2>
+                        <p>He Frowned</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>عبس</h2>
+                        <p>42 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-takwir.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>81</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Takwir</h2>
+                        <p>The Overthrowing</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التكوير</h2>
+                        <p>29 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-infitar.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>82</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Infitar</h2>
+                        <p>The Cleaving</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الإنفطار</h2>
+                        <p>19 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-mutaffifin.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>83</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Mutaffifin</h2>
+                        <p>The Defrauding</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المطففين</h2>
+                        <p>36 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-inshiqaq.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>84</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Inshiqaq</h2>
+                        <p>The Splitting</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الإنشقاق</h2>
+                        <p>25 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-buruj.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>85</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Buruj</h2>
+                        <p>The Mansions of the Stars</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>البروج</h2>
+                        <p>22 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/at-tariq.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>86</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Tariq</h2>
+                        <p>The Morning Star</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الطارق</h2>
+                        <p>17 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ala.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>87</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-A'la</h2>
+                        <p>The Most High</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الأعلى</h2>
+                        <p>19 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ghashiyah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>88</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ghashiyah</h2>
+                        <p>The Overwhelming</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الغاشية</h2>
+                        <p>26 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-fajr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>89</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Fajr</h2>
+                        <p>The Dawn</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفجر</h2>
+                        <p>30 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-balad.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>90</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Balad</h2>
+                        <p>The City</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>البلد</h2>
+                        <p>20 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-shams.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>91</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ash-Shams</h2>
+                        <p>The Sun</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الشمس</h2>
+                        <p>15 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-layl.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>92</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Layl</h2>
+                        <p>The Night</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الليل</h2>
+                        <p>21 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/ad-duha.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>93</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ad-Duha</h2>
+                        <p>The Morning Brightness</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الضحى</h2>
+                        <p>11 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/ash-sharh.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>94</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Ash-Sharh</h2>
+                        <p>The Relief</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الشرح</h2>
+                        <p>8 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/at-tin.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>95</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Tin</h2>
+                        <p>The Fig</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التين</h2>
+                        <p>8 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-alaq.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>96</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Alaq</h2>
+                        <p>The Clot</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>العلق</h2>
+                        <p>19 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-qadr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>97</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qadr</h2>
+                        <p>The Power</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القدر</h2>
+                        <p>5 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-bayyina.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>98</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Bayyina</h2>
+                        <p>The Clear Evidence</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>البينة</h2>
+                        <p>8 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-zalzalah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>99</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Az-Zalzalah</h2>
+                        <p>The Earthquake</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الزلزلة</h2>
+                        <p>8 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-adiyat.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>100</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Adiyat</h2>
+                        <p>The Courser</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>العاديات</h2>
+                        <p>11 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-qaria.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>101</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Qaria</h2>
+                        <p>The Calamity</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>القارعة</h2>
+                        <p>11 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-takathur.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>102</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>At-Takathur</h2>
+                        <p>The Rivalry in Worldly Increase</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>التكاثر</h2>
+                        <p>8 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-asr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>103</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Asr</h2>
+                        <p>The Declining Day</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>العصر</h2>
+                        <p>3 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-humazah.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>104</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Humazah</h2>
+                        <p>The Traducer</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الهمزة</h2>
+                        <p>9 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-fil.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>105</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Fil</h2>
+                        <p>The Elephant</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفيل</h2>
+                        <p>5 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/quraish.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>106</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Quraish</h2>
+                        <p>The Tribe of Quraish</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>قريش</h2>
+                        <p>4 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-maun.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>107</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ma'un</h2>
+                        <p>The Small Kindnesses</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الماعون</h2>
+                        <p>7 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            <a href="/surat/al-kawthar.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>108</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Kawthar</h2>
+                        <p>The Abundance</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الكوثر</h2>
+                        <p>3 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-kafiroon.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>109</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Kafiroon</h2>
+                        <p>The Disbelievers</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الكافرون</h2>
+                        <p>6 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-nasr.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>110</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-Nasr</h2>
+                        <p>The Divine Support</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>النصر</h2>
+                        <p>3 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-masad.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>111</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Masad</h2>
+                        <p>The Palm Fiber</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>المسد</h2>
+                        <p>5 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-ikhlas.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>112</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Ikhlas</h2>
+                        <p>The Sincerity</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الإخلاص</h2>
+                        <p>4 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-falaq.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>113</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>Al-Falaq</h2>
+                        <p>The Daybreak</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الفلق</h2>
+                        <p>5 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/surat/al-nas.html">
+                <div class="box">
+                    <div class="number">
+                        <h3>114</h3>
+                    </div>
+                    <div class="name-en">
+                        <h2>An-Nas</h2>
+                        <p>The Mankind</p>
+                    </div>
+                    <div class="name-ar">
+                        <h2>الناس</h2>
+                        <p>6 Ayahs</p>
+                    </div>
+                </div>
+            </a>
+            
+
+
+
+            </div>
+        </div>
+        <script src="/index.js"></script>
+        <script src="/surats.js"></script>
+
+</body>
+</html>
